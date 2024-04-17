@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo practice</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-animation">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="./img/odoo-white.svg" alt="logo odoo" width="70" height="64">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Docs</a>
+                    </li>
+
+                </ul>
+                <a href="#" class=" signin ">Sign in</a>
+                <form class="d-flex buy-margin">
+
+                    <button class="btn btn-light signin-btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-bag me-3" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                        </svg>Buy
+                        now</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+
+    <!-- header -->
+    <header>
+        <div class="get-started header">
+            <div class="container">
+                <div class="get-started-flex ">
+                    <div class="get-started-info">
+                        <h1 class="text-light">Development done right</h1>
+                        <p class="text-light">Build a beautiful, modern website with flexible components built from
+                            scratch.</p>
+                        <button class="btn btn-light get-started-btn" type="submit">
+                            Get started +</button>
+                        <div class="d-logos">
+                            <p class="text-light p-trusted">Trusted by:</p>
+                            <img src="./img/google-white.svg" class="img-fluid img-fluid-logos" alt="logo google">
+                            <img src="./img/spotify-white.svg" class="img-fluid img-fluid-logos" alt="logo spotify">
+                            <img src="./img/airbnb-white.svg" class="img-fluid img-fluid-logos" alt="logo airbnb">
+                            <img src="./img/paypal-white.svg" class="img-fluid img-fluid-logos" alt="logo paypal">
+                        </div>
+                    </div>
+                    <div class="manage-card">
+                        <div class="manage-card-flex">
+                            <div>
+                                <p>Manage cards</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-dark">Add new</button>
+                            </div>
+                        </div>
+                        <div class="card-number-bg">
+                            <div class="manage-card-flex card-number">
+                                <div>
+                                    <p><img src="./img/mastercard.svg" alt=" mastercard"></p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success card-number-btn">Active</button>
+                                </div>
+
+                            </div>
+                            <div class="text-light card-number-num">
+                                <p class="card-number-text fw-light">CARD NUMBER</p>
+                                <p class="fs-3">4358 - 7421 - 9256 - 6682</p>
+                            </div>
+                            <div class=" text-light pb-5 card-name">
+                                <div>
+                                    <p class="card-number-name">NAME</p>
+                                    <p class="fw-normal">John Snow</p>
+                                </div>
+                                <div>
+                                    <p class="card-number-name">EXPIRY DATE</p>
+                                    <p class="fw-normal">11/23</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex align-items-start justify-content-between card-price">
+                            <div>
+                                <p>Starbucks</p>
+                                <p class="fw-light">Pending - San Francisco, United States</p>
+                            </div>
+                            <div>
+                                <p>$5,50 USD</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start justify-content-between card-price">
+                            <div>
+                                <p>Nike Sports</p>
+                                <p class="fw-light">Pending - Lisbon, Portugal</p>
+                            </div>
+                            <div>
+                                <p>$129,00 USD</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-link card-link">View all ></button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+
+    <!-- main -->
+    <main>
+        <!-- tools-->
+        <section>
+            <div class="tools">
+                <div class="tools-info">
+                    <img src="./img/img_01.jpg" alt="image people" class="tools-img">
+                    <button class="btn btn-light signin-btn tools-btn" type="submit">
+                        Play video<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-play" viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                        </svg></button>
+                    <p class="fs-4 tools-title ">Awesome projects</p>
+
+
+                    <div class="d-flex justify-content-between tools-title ">
+                        <p>Create the new logo</p>
+                        <p>3:50</p>
+                    </div>
+                    <div class="progress tools-progress1">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 55%"></div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-between tools-title tools-projects2">
+                        <p>Set up the color palette</p>
+                        <p>4:00</p>
+                    </div>
+                    <div class="progress tools-progress2">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 70%"></div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-between tools-title tools-projects3">
+                        <p>Wireframe and prototype</p>
+                        <p>6:50</p>
+                    </div>
+                    <div class="progress tools-progress3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="tools-text">
+                    <p class="tools-yellow">Tools</p>
+                    <h2>We build for designers and developers</h2>
+                    <p>Get components and examples, including tons of variables that will help you grow your business.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- tools-->
+
+
+        <!-- features-->
+        <div class="features">
+            <div>
+                <img src="./img/img_02.jpg" alt="image people" class="features-img">
+                <button class="btn btn-light signin-btn features-btn" type="submit">
+                    Play video<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-play" viewBox="0 0 16 16">
+                        <path
+                            d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                    </svg></button>
+            </div>
+
+            <div class="features-text">
+                <p class="features-green">Features</p>
+                <h3 class="features-info">Get components and examples, including tons of variables that will help you
+                    grow
+                    your business.</h3>
+                <div class="features-check">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                    </svg>
+                    <p>Perfect for modern startups</p>
+                </div>
+                <div class="features-check">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                    </svg>
+                    <p>Fully customizable and scalable</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- features-->
+
+
+        <!-- Technology -->
+        <section>
+            <div class="tech">
+                <div class="tech-order">
+                    <div>
+
+                        <div class="card mb-4" style="width: 20rem;">
+                            <img src="./img/person_03.jpg" class="card-img-top" alt="image person">
+                            <div class="card-body d-flex justify-content-around align-items-center">
+                                <p class="tech-circle">JH</p>
+                                <p class="card-text">Jimmy Hendrix</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="tech-info1">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+
+                                </div>
+                                <div>
+                                    <p class="fs-5">300+ components</p>
+                                    <p class="fw-light">Built to be customized</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-info2 text-center ">
+                            <div>
+
+                                <img src="./img/airbnb.svg" alt="logo airbnb" class="tech-info2-img">
+                                <div class="d-flex justify-content-around tech-info2-stars">
+                                    <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                    <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                    <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                    <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                    <svg class="tech-stargrey" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                    </svg>
+                                </div>
+                                <p>4.95 out of 5 stars</p>
+                                <p class="fw-light mb-5">from 23 reviews</p>
+                            </div>
+
+                        </div>
+
+                        <div class="tech-info3">
+                            <div class="tech-info3-flex">
+                                <img class="tech-info3-img" src="./img/company_01.png" alt="company">
+                                <p>Website UI Kit</p>
+                                <div class="d-flex ms-3">
+                                    <img src="./img/person_01.jpg" alt="image person" class="tech-info3-person">
+                                    <img src="./img/person_02.jpg" alt="image person" class="tech-info3-person">
+                                    <img src="./img/person_03.jpg" alt="image person" class="tech-info3-person">
+                                </div>
+                                <div class="tech-info3-icons">
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-paperclip" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z" />
+                                    </svg>
+
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-eye" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                                    </svg>
+
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="tech-text">
+                        <p class="tech-blue">Technology</p>
+                        <h2>We use the latest technologies on the market</h2>
+                        <p>Get components and examples, including tons of variables that will help you grow your
+                            business.
+                        </p>
+                        <button type="button" class="btn tech-btn">See case studies</button>
+                    </div> <!-- Text -->
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Install -->
+        <div class="install">
+            <div>
+                <img src="./img/img_03.jpg" alt="image people" class="install-img">
+                <button class="btn btn-light signin-btn install-btn" type="submit">
+                    Play video<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-play" viewBox="0 0 16 16">
+                        <path
+                            d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                    </svg></button>
+            </div>
+
+            <div class="install-text">
+                <p class="install-yellow">Easy to install</p>
+                <h2>Download, install and run.</h2>
+                <p class="install-info">Get components and examples, including tons of variables that will help you grow
+                    your business.</p>
+                <div class="d-flex justify-content-between">
+
+                    <div class="install-check">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-apple" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <p>Download on the <span>App Store</span></p>
+
+                        </div>
+                    </div>
+                    <div class="install-check">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-google-play" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <p>Download on the <span>Play Store</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Install -->
+    </main>
+    <!-- main -->
+
+    <!-- Solutions -->
+    <section class="container solutions-width">
+        <div>
+            <div class="solutions text-light">
+                <div class="solutions-flex">
+                    <div class="solutions-text">
+                        <h4>Infinite solutions</h4>
+                        <p>Intuitive markup, powerful and lightning-fast build tools,
+                            everything you need to turn your ideas into incredible products.
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn btn-light solutions-btn " type="submit">
+                            Learn more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Solutions -->
+
+
+    <!-- Awards -->
+    <section>
+        <div class="container-fluid awards">
+            <div class="d-flex awards-flex container">
+                <p class="awards-blue">Awards</p>
+                <p>Awards for design, creativity, and innovation on the Internet</p>
+            </div>
+
+            <div class="awards-cards">
+                <div class="awards-info1 text-center ">
+                    <div>
+                        <img src="./img/airbnb.svg" alt="logo airbnb" class="awards-info1-img">
+                        <div class="d-flex justify-content-around awards-info1-stars">
+                            <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-stargrey" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <p>4.95 out of 5 stars</p>
+                        <p class="fw-light mb-5">from 23 reviews</p>
+                    </div>
+
+                </div>
+
+                <div class="awards-info2 text-center d-flex align-items-center ">
+                    <div>
+                        <img src="./img/amazon.svg" alt="logo amazon" class="awards-info2-img">
+                        <p class="fw-light ">They build modern-looking websites easily using Tabs.
+                        </p>
+                        <button type="button" class="btn awards-btn">Learn more</button>
+                    </div>
+
+                </div>
+
+                <div class="awards-info2 text-center d-flex align-items-center ">
+                    <div>
+                        <img src="./img/slack.svg" alt="logo slack" class="awards-info2-img">
+                        <p class="fw-light ">They build modern-looking websites easily using Tabs.
+                        </p>
+                        <button type="button" class="btn awards-btn">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="awards-info1 text-center ">
+                    <div>
+                        <img src="./img/spotify.svg" alt="logo spotify" class="awards-info1-img">
+                        <div class="d-flex justify-content-around awards-info1-stars">
+                            <svg class="tech-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-star" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <svg class="awards-stargrey" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <p>4.95 out of 5 stars</p>
+                        <p class="fw-light mb-5">from 23 reviews</p>
+                    </div>
+
+                </div>
+
+                <div class="awards-info2 text-center d-flex align-items-center ">
+                    <div>
+                        <img src="./img/paypal.svg" alt="logo paypal" class="awards-info2-img">
+                        <p class="fw-light ">They build modern-looking websites easily using Tabs.
+                        </p>
+                        <button type="button" class="btn awards-btn">Learn more</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Awards -->
+
+
+    <!-- Answers -->
+    <section>
+        <div class="container answers">
+            <div class="text-center mb-5">
+                <h3>Helpful answers</h3>
+                <p>Start building fast, beautiful, and modern-looking websites in no time.</p>
+            </div>
+
+            <div class="answers-flex">
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-file-earmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                                    </svg>
+                                    Which license do I need?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Omnis, labore. Similique, blanditiis. Aut, rerum odts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-unlock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2M3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    How do I get access to my database?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium tempore esse laborum harum autem enim.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-folder" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z" />
+                                    </svg>
+                                    How do I see previous orders?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Voluptatibus veritatis quo placeat, nemo fuga eligendi.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-file-earmark" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                                    </svg>
+                                    Which license do I need?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Omnis, labore. Similique, blanditiis. Aut, rerum odts.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-unlock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2M3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                    How do I get access to my database?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium tempore esse laborum harum autem enim.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-folder" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z" />
+                                    </svg>
+                                    How do I see previous orders?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Voluptatibus veritatis quo placeat, nemo fuga eligendi.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center buy">
+                <h6>I want to start a new project.</h6>
+                <div class="buy-flex">
+                    <div>
+                        <button class="btn btn-light buy-btn " type="submit">
+                            Buy now<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                            </svg></button>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-light">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Answers -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class=" footer">
+            <div class="container">
+                <div class="text-light footer-flex">
+                    <div>
+                        <h4>Brilliant solutions for your ideas</h4>
+                        <p>Modern-looking websites.</p>
+
+                    </div>
+                    <div class="footer-btn-flex">
+                        <div>
+                            <button class="btn btn-light doc-btn " type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-file-post-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M4.5 3h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1m0 2h7a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5" />
+                                </svg>
+                                Documentation</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary buy-btn " type="submit">
+                                Purchase now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-odoo">
+                    <div class="footer-odoo-w">
+                        <img class="footer-img" src="./img/odoo-white.svg" alt="logo odoo">
+                        <p class="text-light">Odoo attempts to bring the best development experience to designers and
+                            developers by offering
+                            the tools needed for
+                            having a quick and solid start in most web projects.</p>
+                        <div class="footer-icons">
+                            <div>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                    </svg></a>
+
+                            </div>
+                            <div>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg></a>
+
+                            </div>
+                            <div>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg></a>
+
+                            </div>
+                            <div>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                    </svg></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-light">
+                        <h5>Account</h5>
+                        <p><a href="#">Profile</a></p>
+                        <p><a href="#">Settings</a></p>
+                        <p><a href="#">Billing</a></p>
+                        <p><a href="#">Notifications</a></p>
+                    </div>
+
+                    <div class="text-light">
+                        <h5>About</h5>
+                        <p> <a href="#">Services</a></p>
+                        <p> <a href="#">Pricing</a></p>
+                        <p> <a href="#">Contact</a> </p>
+                        <p> <a href="#">Careers</a></p>
+                    </div>
+
+                    <div class="text-light">
+                        <h5>Company</h5>
+                        <p><a href="#">Community</a></p>
+                        <p><a href="#">Help center</a></p>
+                        <p><a href="#">Support</a></p>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-odoo-terms text-light">
+                    <div class="footer-links">
+                        <div>
+                            <p> <span>Odoo.</span>All rights reserved</p>
+                        </div>
+                        <div class="footer-links-d">
+                            <a href="#">
+                                <p>Terms</p>
+                            </a>
+                            <a href="#">
+                                <p>Privacy</p>
+                            </a>
+                            <a href="#">
+                                <p>Cookies</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
