@@ -1542,7 +1542,7 @@ hr {
 }
 
 
-.footer-odoo {
+.footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1552,7 +1552,7 @@ hr {
 
 @media (min-width: 300px) {
 
-    .footer-odoo {
+    .footer {
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -1560,11 +1560,11 @@ hr {
         margin: 4rem 0;
     }
 
-    .footer-odoo p {
+    .footer p {
         font-weight: 100;
     }
 
-    .footer-odoo-w {
+    .footer-w {
         max-width: none;
         display: flex;
         flex-direction: column;
@@ -1572,11 +1572,11 @@ hr {
         margin: 0 0 4rem 0;
     }
 
-    .footer-odoo-terms {
+    .footer-terms {
         margin: 5rem 2rem;
     }
 
-    .footer-odoo-terms span {
+    .footer-terms span {
         font-weight: 600;
     }
 
@@ -1598,7 +1598,7 @@ hr {
 
 @media (min-width: 768px) {
 
-    .footer-odoo {
+    .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1606,7 +1606,7 @@ hr {
         padding: 0 2rem;
     }
 
-    .footer-odoo-w {
+    .footer-w {
         max-width: 45%;
     }
 
@@ -1627,7 +1627,7 @@ hr {
 @media (min-width: 992px) {
 
 
-    .footer-odoo-w {
+    .footer-w {
         max-width: 30%;
     }
 }
